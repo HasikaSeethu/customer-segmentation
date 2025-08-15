@@ -34,7 +34,7 @@ Mock dataset with:
 - Placeholder Tableau dashboard screenshot
 
 ## Sample Visual
-![Dashboard Screenshot](dashboard_placeholder.png)
+![Dashboard Screenshot](customer_segmentation_dashboard.png)
 
 ## QA Checks (What I Verified)
 - Data sanity: No missing values in `AnnualIncome` and `SpendingScore`.
