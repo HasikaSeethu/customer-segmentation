@@ -28,3 +28,16 @@ Mock dataset with:
 
 ## Sample Visual
 ![Dashboard Screenshot](dashboard_placeholder.png)
+
+## QA Checks (What I Verified)
+- Data sanity: No missing values in `AnnualIncome` and `SpendingScore`.
+- Value ranges: `SpendingScore` between 0–100; `AnnualIncome` reasonable values.
+- Reproducibility: `random_state=42` set for consistent clustering.
+- Output validation: `customer_segments.csv` includes a `Cluster` column with 3 unique values (0,1,2).
+- Visualization exists: `cluster_plot.png` is generated without errors.
+
+## Dashboard Test Ideas (BI Perspective)
+- Filter by cluster and verify counts match the CSV.
+- Check summary stats per cluster (avg income, avg spending).
+- Slice by `Age` buckets (18–25, 26–35, etc.) and verify totals.
+- Export/Download: confirm CSV download matches filtered rows.
